@@ -1,0 +1,22 @@
+{% extends 'begin/base.html' %}
+{% block body %}
+<div class="formlog">
+    <h1>Book's Detail</h1>
+    <div class="image-side">
+        <img src="{{MEDIA_URL}}{{object.book_image}}" width="500px" height="500px">
+    </div>
+    <form >
+        <label>Seller:</label><span>{{object.seller}}</span><br>
+        <label>Book's name:</label><span>{{object.book_name}}</span><br>
+        <label>Edition:</label><span>{{object.edition}}</span><br>
+        <label>Price:</label><span>{{object.price}}</span><br>
+        <label>Location:</label><span>{{object.location}}</span><br>
+        <label>Contact num:</label><span>{{object.phone}}</span><br>
+        {% if object.seller == user %}
+        <button class="btn"><a href="{% url 'main:update' object.id %}" >Update</a></button>
+        <button class="btn btn-danger"><a href="{% url 'main:delete' object.id %}" >Delete</a></button>
+    </form>
+</div>
+{% endif %}
+
+{% endblock %}

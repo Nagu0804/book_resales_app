@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+nav {
+    display: flex;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    margin: 0;
+}
+
+.list {
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.list-item  {
+    font-size: 16px;
+    padding: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.one {
+    font-size: 16px;
+    padding: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.formlog {
+    max-width: 700px;
+    margin: 100px auto;
+    opacity: 1px;
+    padding: 50px;
+   
+}
+nav{
+    display:block;
+}
+
+ul{
+    display:block;
+}
+
+li{
+    display:block;
+}
+
+.basenav{
+background:linear-gradient(45deg, black, grey);
+    }
+
+
+div section img{
+    background-image: "images/books.jpg";
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.title text-center{
+text-align:center;
+}
+
+.new{
+height: 15vh;
+width:100vw;
+background-color:blue;
+}
+
+.aboutusimg{
+    height:50%;
+    top:150px;
+    position:absolute;
+    float:right;
+    left:450px;
+    float:right;
+}
+
+p ul li{
+float:left;
+top:500px;
+left:200px;}
+#about-us{
+    padding-bottom: 50px;
+    padding-top: 45px;
+    margin:80px 0 0 0
+}
+.about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#about-us ul li{
+    margin: 20px 0 0 0;
+}
+#about-us ul{
+    margin-left: 20px;
+
+
+}
+.about-us-img{
+float:right;
+height:180px;}
+
+
+
+.title{
+color:black;
+margin-left:20%;
+}
+.col-md-6 services{
+margin-top:40%;
+}
+.row text-center{
+margin-top:40%;
+}
+#services {
+    background-image: url('/static/images/servicebg.jpg');
+    filter: blur(20%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.first {
+    position: relative;
+}
+.first strong {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.link{
+    text-decoration: None;
+    color: rgb(1, 12, 60);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(9, 8, 8);
+  }
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .card{
+    border:1px solid black;
+    }
+    .card-me{
+    margin:20px;
+    }
