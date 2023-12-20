@@ -17,9 +17,9 @@ from django.core.mail import send_mail,EmailMultiAlternatives
 
 # Create your views here.
 def LoginView(request):
-    if request.method == 'GET':
-        if request.user.is_authenticated:
-            return redirect('/accounts/profile')
+    # if request.method == 'GET':
+    #     if request.user.is_authenticated:
+    #         return redirect('/home')
     if request.method=='POST':
         form=LoginForm(request.POST)
         if form.is_valid():
@@ -29,13 +29,13 @@ def LoginView(request):
             if user:
                 print('user',user)
                 login(request,user)
-                return redirect('/accounts/profile/')
+                return redirect('/home')
             else:
                 print('Not authenticated')
-    elif request.method=='GET':
-        if request.user.is_authenticated:
-            return redirect('/accounts/profile/')
-        form=LoginForm()
+    # elif request.method=='GET':
+    #     if request.user.is_authenticated:
+    #         return redirect('/home')
+    form=LoginForm()
     return render(request,'accounts/login.html',{'form':form})
 
 @transaction.atomic

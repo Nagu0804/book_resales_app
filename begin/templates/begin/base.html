@@ -28,23 +28,25 @@
 <nav class="basenav">
 	<!-- <h1>Bookland</h1> -->
 	<ul class="list">
-		<li class="list-item"><a class="one" href="{% url 'accounts:logout' %}">Logout</a></li>
-		<li class="list-item"><a class="one" href="{% url 'begin:contact' %}"> Contact Us</a></li>
-		<li class="list-item"><a class="one" href="{% url 'accounts:profile' %}">Profile</a></li>
-		<li class="list-item"><a class="one" href="{% url 'main:buy' %}">Buy</a></li>
-		<li class="list-item"><a class="one" href="{% url 'main:sell' %}">Sell</a></li>
 		<li class="list-item"><a class="one" href="{% url 'begin:index' %}">Home</a></li>
+		<li class="list-item"><a class="one" href="{% url 'main:sell' %}">Sell</a></li>
+		<li class="list-item"><a class="one" href="{% url 'main:buy' %}">Buy</a></li>
+		<li class="list-item"><a class="one" href="{% url 'accounts:profile' %}">Profile</a></li>
+		<li class="list-item"><a class="one" href="{% url 'begin:contact' %}"> Contact Us</a></li>
+		<li class="list-item"><a class="one" href="{% url 'begin:service' %}">Our Services</a></li>
+		<li class="list-item"><a class="one" href="{% url 'begin:about-us' %}">About Us</a></li>
+		<li class="list-item"><a class="one" href="{% url 'accounts:logout' %}">Logout</a></li>
 	</ul>
 </nav>
 {% else %}
 <nav class="basenav">
 	<ul lass="list">	
-		<li class="list-item"><a class="one" href="{% url 'accounts:signup' %}">Register</a></li>
-		<li class="list-item"><a class="one" href="{% url 'accounts:login' %}">Login</a></li>
+		<li class="list-item"><a class="one" href=" {% url 'begin:index' %}">Home</a></li>
 		<li class="list-item"><a class="one" href= "{% url 'begin:contact' %}"> Contact Us</a></li>
 		<li class="list-item"><a class="one" href="{% url 'begin:service' %}">Our Services</a></li>
 		<li class="list-item"><a class="one" href="{% url 'begin:about-us' %}">About Us</a></li>
-		<li class="list-item"><a class="one" href=" {% url 'begin:index' %}">Home</a></li>
+		<li class="list-item"><a class="one" href="{% url 'accounts:signup' %}">SignUp</a></li>
+		<li class="list-item"><a class="one" href="{% url 'accounts:login' %}">Login</a></li>
 	</ul>
 </nav>
 {% endif %}
